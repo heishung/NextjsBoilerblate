@@ -95,3 +95,4 @@ pm2 restart ecosystem.config.js --env production -i max
 ```
 # NextjsBoilerblate
 # NextjsBoilerblate
+# NextjsBoilerblate
