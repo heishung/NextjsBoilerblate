@@ -8,7 +8,7 @@ const ContainerIntro = styled.div`
 `
 function index() {
     return (
-        <ContainerIntro>
+        <div className="ContainerIntro">
              <Breadcrumb separator=">">
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="">Application Center</Breadcrumb.Item>
@@ -16,7 +16,7 @@ function index() {
                 <Breadcrumb.Item>An Application</Breadcrumb.Item>
             </Breadcrumb>
             <ContentIntro/>
-        </ContainerIntro>
+        </div>
     )
 }
 

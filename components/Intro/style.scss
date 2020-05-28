@@ -1,0 +1,14 @@
+#container-intro{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    .box-download-game{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .img-game-downLoad{
+        width:80px;
+        height:80px;
+        border-radius:8px;
+    }
+}
