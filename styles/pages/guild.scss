@@ -1,0 +1,1073 @@
+@import '../variables';
+@import 'support_guild';
+
+.guild {
+  .title {
+    height: 54px;
+    font-size: 17px;
+    line-height: 54px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid $light;
+    position: relative;
+    span.fun-ic {
+      position: absolute;
+      top: 17px;
+      left: 13px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+  }
+  .second-title {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 21px 0 13px;
+    font-weight: 600;
+    display: flex;
+    span.fun-ic {
+      width: 24px;
+      height: 24px;
+      margin-right: 7px;
+    }
+  }
+  .game-list {
+    .game-detail {
+      display: flex;
+      .game-icon {
+        flex: 0 1 44px;
+        padding: 15px 13px 14px 13px;
+        img {
+          width: 44px;
+          height: 44px;
+          border-radius: 10px;
+        }
+      }
+      .game-title {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $light;
+        span {
+          font-size: 17px;
+          line-height: 22px;
+        }
+      }
+    }
+    a {
+      display: block;
+      color: black;
+      &:visited,
+      &:focus {
+        .game-title {
+          border-color: $light;
+        }
+      }
+    }
+  }
+  .create-guild {
+    padding: 12px;
+    .fun-form {
+      .form-group {
+        button {
+          height: 44px;
+          width: 180px;
+          margin: 0 auto;
+          color: $gray;
+          font-weight: 700;
+          font-size: 17px;
+          margin-top: 9px;
+          &.valid {
+            background-color: $base-color;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .guild-icon {
+    img {
+      width: 76px;
+      height: 76px;
+      border: 16px;
+    }
+  }
+  .guild-info {
+    padding: 0 0 0 14px;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    .guild-game {
+      font-size: 13px;
+      line-height: 16px;
+      color: $dark-gray;
+      padding: 9px 0 12px 0;
+    }
+    .guild-members {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  .filter-and-order-guild {
+    background-color: #f4f4f4;
+    padding: 9px 12px 9px 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .filter-guild {
+      position: relative;
+      flex-basis: 0;
+      flex-grow: 1;
+      margin-left: 10px;
+      input {
+        width: 100%;
+        border: 1px solid #e5e5ea;
+        padding: 6px 35px 6px 13px;
+        font-size: 15px;
+        line-height: 20px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        outline: none;
+        -webkit-appearance: none;
+      }
+      span.fun-ic {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 7px;
+        top: 5px;
+      }
+    }
+    .order-guild {
+      flex: 0 1 32%;
+      max-width: 32%;
+      min-width: 110px;
+      .input-sort {
+        display: flex;
+        align-items: center;
+        border: 1px solid $light-gray;
+        border-radius: 5px;
+        padding: 3px 8px 3px 10px;
+        cursor: pointer;
+        span.fun-ic {
+          width: 24px;
+          height: 24px;
+          margin-left: auto;
+        }
+      }
+      .order-guild__control {
+        min-height: 32px;
+        border-color: #e5e5ea;
+        .order-guild__value-container {
+          padding: 0 8px;
+        }
+        .order-guild__indicator-separator {
+          opacity: 0;
+        }
+        .order-guild__indicator {
+          padding: 6px 8px;
+        }
+      }
+      .order-guild__menu {
+        .order-guild__option {
+          background-color: white;
+          &:hover {
+            background-color: #e5e5ea;
+          }
+          &.order-guild__option--is-selected {
+            background-color: $base-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  // .guild {
+  //   .filter-and-order-guild {
+  //     .filter-guild,
+  //     .order-guild {
+  //       flex: 0 1 100%;
+  //       max-width: 100%;
+  //     }
+  //     .order-guild {
+  //       margin-top: 9px;
+  //     }
+  //   }
+  // }
+}
+
+.modal-created-guild-success-content,
+.modal-join-guild-success-content {
+  .model-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .success {
+    color: $green;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fun-ic {
+      width: 24px;
+      height: 24px;
+      margin-right: 6px;
+    }
+  }
+  .guild-image {
+    height: 233px;
+    background-image: url('/bang-hoi/statics/images/success-background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    img {
+      width: 126px;
+      height: 126px;
+      border-radius: 30px;
+    }
+  }
+  .guild-info {
+    padding: 19px 22px 21px;
+    text-align: center;
+    .game-name {
+      color: $base-color;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .guild-name {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 600;
+      padding: 8px 0 7px;
+      word-break: break-word;
+    }
+    .server-name {
+      font-size: 17px;
+      line-height: 22px;
+      word-break: break-word;
+    }
+  }
+  .actions {
+    padding: 0 22px 20px;
+    a {
+      background-color: $base-color;
+      font-size: 17px;
+      height: 54px;
+      line-height: 54px;
+    }
+  }
+}
+.modal-join-guild-success-content {
+  .actions {
+    display: flex;
+    .fun-btn {
+      height: 42px;
+      line-height: 42px;
+      font-weight: 600;
+      border: 1px solid $base-color;
+      &.close-modal {
+        background-color: white;
+        color: $base-color;
+        margin-right: 14px;
+      }
+    }
+  }
+}
+
+#user-guilds {
+  .guild-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    color: black;
+  }
+  .guilds-owner-by {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px 16px;
+    border-bottom: 6px solid $light-gray;
+    .guild-owner {
+      display: flex;
+      padding: 8px 0px 10px;
+      border-bottom: 1px solid $light;
+      .guild-info {
+        position: relative;
+        max-width: calc(100% - 76px);
+        .guild-game {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .guild-members {
+          .joined-members {
+            display: flex;
+            align-items: flex-end;
+            font-weight: 600;
+            font-size: 11px;
+            color: $dark-gray;
+            margin-right: 12px;
+            .ic-members-active {
+              width: 12px;
+              height: 12px;
+              margin-right: 6px;
+            }
+            .count-member {
+              font-size: 13px;
+              color: black;
+              margin-right: 3px;
+            }
+          }
+          .requested-members {
+            display: flex;
+            align-items: flex-end;
+            font-size: 11px;
+            color: black;
+            .ic-request-active {
+              width: 14px;
+              height: 14px;
+              margin-right: 4px;
+            }
+            .ic-alert-dot {
+              width: 8px;
+              height: 8px;
+              align-self: center;
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+    }
+    a:last-child .guild-owner {
+      border-bottom: none;
+    }
+  }
+  .guilds-member-by {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+    .guild-member {
+      display: flex;
+      padding: 8px 0px 10px;
+      border-bottom: 1px solid $light;
+      .guild-info {
+        position: relative;
+        max-width: calc(100% - 76px);
+        .guild-members {
+          display: flex;
+          align-content: flex-end;
+          font-size: 11px;
+          color: black;
+          .guild-owner {
+            display: flex;
+            flex: 0 1 33%;
+            .ic-owner {
+              display: block;
+              width: 12px;
+              height: 12px;
+              background-image: url('/bang-hoi/statics/images/owner.svg');
+              background-repeat: no-repeat;
+              margin-right: 3px;
+            }
+          }
+          .guild-status {
+            display: flex;
+            align-content: flex-end;
+            flex: 0 1 25%;
+            .ic-member {
+              display: block;
+              width: 12px;
+              height: 12px;
+              background-image: url('/bang-hoi/statics/images/members-gray.svg');
+              background-repeat: no-repeat;
+              margin-right: 6px;
+            }
+          }
+          .request-status {
+            display: flex;
+            align-content: flex-end;
+            color: $red;
+            .fun-ic {
+              width: 12px;
+              height: 12px;
+              margin-right: 4px;
+            }
+            &.joined {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+    a:last-child .guild-member {
+      border-bottom: none;
+    }
+  }
+}
+
+#join-guild {
+  .guilds-list {
+    .guild-detail {
+      box-sizing: border-box;
+      width: auto;
+      margin: 0;
+      height: 121px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 12px;
+      border-bottom: 1px solid $light;
+      .guild-info {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        .guild-logo-name {
+          display: flex;
+          flex: 0 1 calc(100% - 56px);
+          max-width: calc(100% - 56px);
+        }
+        .guild-logo {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+          }
+        }
+        .guild-name {
+          display: flex;
+          flex-direction: column;
+          padding-left: 12px;
+          max-width: 80%;
+          .name {
+            font-size: 15px;
+            margin-bottom: 7px;
+          }
+          .guild-game-server-name {
+            font-size: 13px;
+            font-weight: 400;
+            color: $dark-gray;
+          }
+        }
+        .link-to-guild {
+          // width: 56px;
+          height: 25px;
+          border: 1px solid $mid-gray;
+          border-radius: 100px;
+          text-align: center;
+          flex: 0 1 56px;
+          max-width: 56px;
+          a {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 23px;
+            color: $gray;
+          }
+        }
+      }
+      .guild-member-info {
+        display: flex;
+        justify-content: space-between;
+        .guild-owner-stat {
+          display: flex;
+          font-size: 11px;
+          line-height: 14px;
+          flex-basis: 0;
+          flex-grow: 1;
+          color: $gray;
+        }
+        .guild-owner {
+          display: flex;
+          flex-direction: column;
+          padding-right: 30px;
+          border-right: 1px solid $light-gray;
+          .guild-owner-name {
+            display: flex;
+            align-items: center;
+            margin-top: 3px;
+            color: black;
+          }
+          .ic-owner {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 4px;
+            background-repeat: no-repeat;
+            background-image: url('/bang-hoi/statics/images/marvel.svg');
+          }
+        }
+        .guild-stat {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          .ic-memmer {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 4px;
+            background-repeat: no-repeat;
+            background-image: url('/bang-hoi/statics/images/members-gray.svg');
+          }
+          > span:nth-of-type(2) {
+            margin-top: 3px;
+            display: flex;
+            font-size: 9px;
+          }
+          .guild-member-count {
+            color: black;
+            margin-right: 3px;
+            font-size: 11px;
+          }
+        }
+        .request-join-guild {
+          .fun-btn {
+            font-weight: 600;
+            width: 73px;
+            height: 32px;
+            background-color: $base-color;
+            color: white;
+            font-size: 13px;
+            line-height: 32px;
+            text-align: center;
+            &.disable {
+              background-color: $light-gray;
+              color: $gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.empty-guilds {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  .second-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    display: block;
+  }
+  .empty-guilds-content {
+    text-align: center;
+    padding: 10px 0 23px;
+    color: $dark-gray;
+    line-height: 22px;
+  }
+  .guild-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 140px;
+      height: 36px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 14px;
+      text-align: center;
+      text-decoration: none;
+      color: $base-color;
+      border: 1px solid $base-color;
+      border-radius: 40px;
+
+      &.create-guild {
+        color: white;
+        background-color: $base-color;
+        margin-right: 10px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.request-join-guild-in-detail {
+  background-color: $base-color;
+  color: white;
+  height: 52px;
+  width: 274px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.pending-request {
+  box-sizing: border-box;
+  border-top: 1px solid #c3e1f0;
+  border-bottom: 1px solid #c3e1f0;
+  display: flex;
+  background-color: $light-cyan;
+  padding: 12px;
+  span.ic-time {
+    margin-right: 9px;
+  }
+  .pending-info {
+    display: flex;
+    flex-direction: column;
+    .pending-text {
+      font-size: 15px;
+      margin-bottom: 7px;
+    }
+    .pending-time {
+      font-size: 13px;
+      color: $dark-gray;
+    }
+  }
+  span.ic-more {
+    align-self: flex-end;
+    margin-left: auto;
+  }
+}
+
+#funtap-guild-edit-form {
+  padding: 12px;
+  .form-group {
+    position: relative;
+    input {
+      font-size: 15px;
+    }
+  }
+  label {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: $gray;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  textarea {
+    padding-top: 35px;
+    margin-bottom: 12px;
+  }
+  .actions {
+    display: flex;
+    .fun-btn {
+      border: 1px solid $base-color;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+    }
+    a {
+      color: $base-color;
+      margin-right: 11px;
+    }
+    button {
+      background-color: $base-color;
+    }
+  }
+  .for-facebook {
+    position: relative;
+    input {
+      padding-left: 44px;
+    }
+    .fun-ic,
+    .ic-wrap {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 10px;
+      left: 11px;
+      border-radius: 50%;
+      background-color: #6d8bc9;
+    }
+    .ic-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ic-users-white {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+#create-guild {
+  .form-group {
+    position: relative;
+    label {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      color: #8e8e93;
+      font-size: 17px;
+      line-height: 22px;
+    }
+    textarea {
+      padding-top: 35px;
+      margin-bottom: 12px;
+    }
+    &.has-error {
+      label {
+        color: $red;
+      }
+    }
+  }
+}
+
+#guild-detail-page {
+  .guild-info-wrapper {
+    border-bottom: 6px solid $light-gray;
+  }
+  .guild-info {
+    padding: 14px;
+    display: flex;
+    .guild-detail {
+      margin-left: 14px;
+      .info-member {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        span {
+          margin-left: 7px;
+          font-size: 13px;
+          &.fun-ic {
+            width: 14px;
+            height: 14px;
+            margin-left: 0;
+          }
+        }
+        .bcg {
+          display: flex;
+          align-items: flex-end;
+          margin-right: 7px;
+          margin-bottom: 5px;
+        }
+        .member-number {
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 5px;
+          .count-member {
+            color: black;
+            line-height: 16px;
+          }
+        }
+      }
+      .guild-name {
+        display: flex;
+        justify-content: space-between;
+        & > div {
+          flex: 0 1 100%;
+          font-weight: bold;
+          font-size: 17px;
+          color: #000000;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: calc(100% - 30px);
+        }
+        span.fun-ic {
+          flex: 0 1 20px;
+          max-width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .guild-slogan {
+    margin: 0 12px 16px;
+    padding: 13px 12px 14px 14px;
+    background-color: #fff7ec;
+    border: 1px solid #f0a33a;
+    border-radius: 4px;
+    .slg-content {
+      margin-top: 5px;
+      max-width: 100%;
+      span {
+        word-break: break-word;
+      }
+    }
+  }
+  .game-promos {
+    display: flex;
+    padding: 12px;
+    justify-content: space-around;
+    border-top: 1px solid #f2f2f2;
+    .game-promo {
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $dark-gray;
+        span {
+          font-size: 13px;
+          line-height: 16px;
+          &.fun-ic {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  .input-copy-wrapper {
+    position: relative;
+    #inputCopy {
+      width: 100%;
+      padding: 0 90px 0 13px;
+      box-shadow: none;
+      border: 1px solid $light-gray;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      -webkit-appearance: none;
+    }
+    .copy-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      height: 42px;
+      border: none;
+      border-radius: 4px;
+      line-height: 20px;
+      padding: 12px 14px;
+      background-color: white;
+      color: $base-color;
+      font-weight: 600;
+    }
+  }
+  .box-ctrl {
+    display: flex;
+    padding: 10px 12px;
+    border-bottom: 1px solid #e4e4e4;
+    .bt-ctrl {
+      cursor: pointer;
+      flex: 0 1 calc(100% / 3);
+      max-width: calc(100% / 3);
+      margin-right: 7px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid $gray;
+      color: $gray;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &.active {
+        background: $base-color;
+        color: white;
+        border: 1px solid $base-color;
+      }
+    }
+  }
+}
+
+.update-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $green;
+  padding: 10px;
+  span.fun-ic {
+    margin-right: 7px;
+  }
+}
+
+.gift-boxes {
+  padding: 15px 12px;
+  .gift-box {
+    border: 1px solid $base-color;
+    border-radius: 8px;
+    padding: 12px 14px 14px 12px;
+    background-color: #fff7ec;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    .gift-icon {
+      margin-right: 14px;
+      span.fun-ic {
+        width: 39px;
+        height: 38px;
+      }
+    }
+    .gift-title {
+      color: black;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 6px;
+    }
+    .gift-condition {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .action {
+      margin-left: auto;
+      button {
+        height: 34px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #61616a;
+        background-color: #eaeaea;
+        padding: 0 12px;
+        &.active {
+          color: white;
+          background-color: $base-color;
+          border-color: $base-color;
+        }
+      }
+    }
+  }
+  .gift-loader {
+    span.react-loading-skeleton {
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.modal-show-gift-detail {
+  border-radius: 18px;
+  border: none;
+  width: 86%;
+  background-color: transparent;
+  .model-wrap {
+    padding: 38px 10px 10px 10px;
+    background-color: white;
+  }
+  .gift-header {
+    background-image: url('/bang-hoi/statics/images/background-gift.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 45px;
+    img {
+      min-width: 145px;
+      display: block;
+      margin: 0 auto;
+      transform: translate(0, 35px);
+    }
+  }
+  .gift-detail {
+    padding-bottom: 19px;
+    .title {
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 11px;
+    }
+    .detail {
+      font-size: 17px;
+      line-height: 20px;
+      margin-bottom: 12px;
+      padding: 0 5px;
+      font-size: 15px;
+      h4 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: $base-color;
+        display: block;
+        margin: 0 0 6px 0;
+      }
+    }
+    .detail-conditions {
+      ul {
+        margin: 0;
+        list-style: none;
+        padding: 0 0 0 25px;
+        text-align: left;
+        li {
+          line-height: 20px;
+          span.fun-ic {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 9px;
+          }
+        }
+      }
+    }
+    .gift-contact {
+      font-size: 17px;
+      span {
+        display: block;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 6px;
+        padding: 0 17px;
+      }
+    }
+    .action {
+      a.fun-btn {
+        width: 73px;
+        margin: 0 auto;
+        background-color: $base-color;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        height: unset;
+        padding: 7px 0;
+      }
+    }
+  }
+}
+
+.modal-update-guild-info {
+  text-align: center;
+  .title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .message {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .action {
+    padding: 29px 0 25px;
+    a.fun-btn {
+      background-color: $base-color;
+      border-color: $base-color;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 44px;
+      width: 144px;
+      height: 44px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.modal-content {
+  &.modal-sort-guild-content {
+    border-radius: 0;
+    .model-wrap {
+      padding: 0 0 10px;
+    }
+    .option {
+      text-align: center;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 22px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f2f2f2;
+      cursor: pointer;
+      &.active {
+        color: $base-color;
+      }
+    }
+  }
+}

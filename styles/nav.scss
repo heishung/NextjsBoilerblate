@@ -1,0 +1,110 @@
+@import 'variables';
+
+.main-header {
+  ul {
+    margin: 0;
+  }
+  nav {
+    flex: 0 1 50px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+
+    #menuToggle {
+      display: block;
+      position: relative;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+      span {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+#app.menu-showed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(10px);
+  overflow: hidden;
+}
+.menu-overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  .sidebar-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .sidebar-close {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    left: 309px;
+    display: flex;
+    border: 1.5px solid #c7c7cc;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-287px, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menu {
+    position: absolute;
+    width: 287px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    li {
+      padding: 16px 0 16px 20px;
+      border-top: 8px solid $custom-gray;
+      box-shadow: 0 -1px $light;
+      &:first-of-type {
+        padding-left: 13px;
+      }
+      &:last-of-type {
+        border-top: none;
+        border-bottom: 1px solid $light;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 17px;
+        span.fun-ic {
+          margin-right: 12px;
+        }
+      }
+    }
+    input:checked ~ ul {
+      transform: none;
+    }
+  }
+  &.menu-showed {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    #menu {
+      transform: translate(0, 0);
+    }
+    .sidebar-close {
+      transform: translate(0, 0);
+    }
+  }
+}

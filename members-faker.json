@@ -1,0 +1,469 @@
+{
+  "members": [
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0664"),
+      "user_id": "23129560",
+      "username": "ngocthaotk2",
+      "role": "owner",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0664"),
+      "user_id": "231295603",
+      "username": "ngocthaotk23",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0665"),
+      "user_id": "231295604",
+      "username": "ngocthaotk24",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0666"),
+      "user_id": "231295605",
+      "username": "ngocthaotk25",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0667"),
+      "user_id": "231295606",
+      "username": "ngocthaotk26",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0668"),
+      "user_id": "231295607",
+      "username": "ngocthaotk27",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0669"),
+      "user_id": "231295608",
+      "username": "ngocthaotk28",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0670"),
+      "user_id": "231295609",
+      "username": "ngocthaotk29",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0671"),
+      "user_id": "231295610",
+      "username": "ngocthaotk30",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0672"),
+      "user_id": "231295611",
+      "username": "ngocthaotk31",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0673"),
+      "user_id": "231295612",
+      "username": "ngocthaotk32",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0674"),
+      "user_id": "231295613",
+      "username": "ngocthaotk33",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0675"),
+      "user_id": "231295614",
+      "username": "ngocthaotk34",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0676"),
+      "user_id": "231295615",
+      "username": "ngocthaotk35",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0677"),
+      "user_id": "231295616",
+      "username": "ngocthaotk36",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0678"),
+      "user_id": "231295617",
+      "username": "ngocthaotk37",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0679"),
+      "user_id": "231295618",
+      "username": "ngocthaotk38",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0680"),
+      "user_id": "231295619",
+      "username": "ngocthaotk39",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0681"),
+      "user_id": "231295620",
+      "username": "ngocthaotk40",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0682"),
+      "user_id": "231295621",
+      "username": "ngocthaotk41",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0683"),
+      "user_id": "231295622",
+      "username": "ngocthaotk42",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0684"),
+      "user_id": "231295623",
+      "username": "ngocthaotk43",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0685"),
+      "user_id": "231295624",
+      "username": "ngocthaotk44",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0686"),
+      "user_id": "231295625",
+      "username": "ngocthaotk45",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0687"),
+      "user_id": "231295626",
+      "username": "ngocthaotk46",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0688"),
+      "user_id": "231295627",
+      "username": "ngocthaotk47",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0689"),
+      "user_id": "231295628",
+      "username": "ngocthaotk48",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0690"),
+      "user_id": "231295629",
+      "username": "ngocthaotk49",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0691"),
+      "user_id": "231295630",
+      "username": "ngocthaotk50",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0692"),
+      "user_id": "231295631",
+      "username": "ngocthaotk51",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0693"),
+      "user_id": "231295632",
+      "username": "ngocthaotk52",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0694"),
+      "user_id": "231295633",
+      "username": "ngocthaotk53",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0695"),
+      "user_id": "231295634",
+      "username": "ngocthaotk54",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0696"),
+      "user_id": "231295635",
+      "username": "ngocthaotk55",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0697"),
+      "user_id": "231295636",
+      "username": "ngocthaotk56",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0698"),
+      "user_id": "231295637",
+      "username": "ngocthaotk57",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0699"),
+      "user_id": "231295638",
+      "username": "ngocthaotk58",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0700"),
+      "user_id": "231295639",
+      "username": "ngocthaotk59",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0701"),
+      "user_id": "231295640",
+      "username": "ngocthaotk60",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0702"),
+      "user_id": "231295641",
+      "username": "ngocthaotk61",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0703"),
+      "user_id": "231295642",
+      "username": "ngocthaotk62",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0704"),
+      "user_id": "231295643",
+      "username": "ngocthaotk63",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0705"),
+      "user_id": "231295644",
+      "username": "ngocthaotk64",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0706"),
+      "user_id": "231295645",
+      "username": "ngocthaotk65",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0707"),
+      "user_id": "231295646",
+      "username": "ngocthaotk66",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0708"),
+      "user_id": "231295647",
+      "username": "ngocthaotk67",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0709"),
+      "user_id": "231295648",
+      "username": "ngocthaotk68",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0710"),
+      "user_id": "231295649",
+      "username": "ngocthaotk69",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0711"),
+      "user_id": "231295650",
+      "username": "ngocthaotk70",
+      "role": "member",
+      "status": "joined"
+    },
+    {
+      "updated_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "created_at": ISODate("2020-03-29T13:21:28.67Z"),
+      "_id": ObjectId("5e80a1bd92288f3e237d0712"),
+      "user_id": "231295651",
+      "username": "ngocthaotk51",
+      "role": "member",
+      "status": "requested"
+    },
+    {
+      "updated_at": ISODate("2020-04-03T10:22:32.481Z"),
+      "created_at": ISODate("2020-04-03T00:59:04.312Z"),
+      "_id": ObjectId("5e870e680628d122adfa6431"),
+      "user_id": "24753752",
+      "username": "duckienft15",
+      "role": "member",
+      "status": "requested"
+    },
+    {
+      "redirect-to-login": "https://id.funtap.vn/login?reditectTo=playfun.vn&response_type=code",
+      "redirect-to-register": "https://id.funtap.vn/register?reditectTo=playfun.vn&response_type=code",
+      "old-url": "http://localhost:3000/guilds/me?code=7886990226b6a393ba1e72d438b94900",
+      "logout": "https://id.funtap.vn/oauth/logout?next=https://playfun.vn/logout"
+    }
+  ]
+}

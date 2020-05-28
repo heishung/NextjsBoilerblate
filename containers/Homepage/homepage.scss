@@ -1,0 +1,112 @@
+@import '../../styles/variables';
+
+.home-banner {
+  min-height: 200px;
+  img {
+    width: 100%;
+  }
+}
+
+.article {
+  h1 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid $light;
+    span {
+      display: block;
+    }
+  }
+  .article-content {
+    padding: 15px 15px 0 15px;
+    .head-line {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 16px;
+      &.bottom {
+        text-align: center;
+        line-height: 28px;
+      }
+    }
+    .article-alert {
+      margin-top: 10px;
+      color: $base-color;
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style: none;
+      padding: 0 0 0 10px;
+      margin: 15px 0 28px;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        span {
+          &.fun-ic {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.guild-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  bottom: 58px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: $base-color;
+    border: 1px solid $base-color;
+    border-radius: 40px;
+    background-color: white;
+    span {
+      margin-right: 6px;
+    }
+    &.create-guild {
+      color: white;
+      background-color: $base-color;
+      margin-right: 10px;
+    }
+  }
+}
+
+.company-intro {
+  padding: 15px 0;
+  background-color: $custom-gray;
+  text-align: center;
+  p {
+    color: $dark-gray;
+    font-size: 13px;
+  }
+}

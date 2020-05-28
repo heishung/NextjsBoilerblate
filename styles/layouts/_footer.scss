@@ -1,0 +1,70 @@
+@import '../variables';
+
+.main-footer {
+  nav {
+    position: fixed;
+    width: 100%;
+    max-width: 768px;
+    bottom: 0;
+    z-index: 3;
+    background-color: white;
+    border-top: 1px solid #e4e4e4;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 20px;
+      li {
+        flex-grow: 0;
+        flex-shrink: 1;
+        max-width: 100%;
+        a {
+          text-decoration: none;
+          color: $dark-gray;
+          font-size: 11px;
+          line-height: 14px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span {
+            width: 28px;
+            height: 28px;
+            background-repeat: no-repeat;
+            &.home {
+              background-image: url('/bang-hoi/statics/images/home.svg');
+            }
+            &.create {
+              background-image: url('/bang-hoi/statics/images/fav-list.svg');
+            }
+            &.join {
+              background-image: url('/bang-hoi/statics/images/request.svg');
+            }
+            &.star {
+              background-image: url('/bang-hoi/statics/images/gold-coin.svg');
+            }
+          }
+          &.active {
+            color: $base-color;
+            span {
+              &.home {
+                background-image: url('/bang-hoi/statics/images/home-active.svg');
+              }
+              &.create {
+                background-image: url('/bang-hoi/statics/images/fav-list-active.svg');
+              }
+              &.join {
+                background-image: url('/bang-hoi/statics/images/request-active.svg');
+              }
+              &.star {
+                background-image: url('/bang-hoi/statics/images/gold-coin-active.svg');
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

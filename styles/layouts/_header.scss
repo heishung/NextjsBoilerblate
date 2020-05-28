@@ -1,0 +1,64 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 54px;
+
+  .logo {
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    display: flex;
+    // justify-content: center;
+  }
+
+  .user-info {
+    flex: 0 1 50px;
+    padding: 0 15px;
+    flex: 0 1 33%;
+    max-width: 33%;
+    .box-auth {
+      text-align: right;
+      a.login-btn {
+        display: inline-block;
+        img {
+          height: 28px;
+          width: 28px;
+        }
+      }
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+        > span {
+          margin-left: 7px;
+          line-height: 20px;
+        }
+        .icon-wrapper {
+          height: 24px;
+          .ic-more-horizontal {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-info {
+  .avatar {
+    background-color: $magenta;
+    text-transform: uppercase;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
