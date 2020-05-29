@@ -1,10 +1,24 @@
-@import '../../styles/variables';
+@import '../variables';
 
 .home-banner {
   min-height: 200px;
+  display:grid;
+  grid-template-columns:600px auto;
+  grid-column-gap:20px;
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
+  .ant-carousel .slick-slide h3 {
+      color: #fff;
+  }
   img {
     width: 100%;
   }
+ 
 }
 
 .article {

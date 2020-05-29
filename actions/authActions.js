@@ -21,8 +21,12 @@ export const loadUser = {
 };
 
 export const login = {
-  request: (username, password) => action(LOGIN[REQUEST], { username, password }),
-  success: (token) => action(LOGIN[SUCCESS], { token }),
+ 
+  request: (username, password) => {
+      console.log(username, password)
+   return action(LOGIN[REQUEST], { username, password })
+  },
+  success: (data) => action(LOGIN[SUCCESS], { data }),
   failure: (error) => action(LOGIN[FAILURE], { error }),
 };
 

@@ -4,7 +4,6 @@ import ReactModal from 'react-modal';
 import Avatar from 'react-avatar';
 import { useSelector } from 'react-redux';
 import { authSelector } from 'reducers/selectors';
-import { redirectToLogout } from 'services/redirectToLogout';
 
 const UserInfo = () => {
   const { isAuthenticated, user } = useSelector(authSelector);
@@ -14,7 +13,7 @@ const UserInfo = () => {
     setShowModal(!showModal);
     redirectToLogout();
   };
-
+  console.log(user)
   return (
     <>
       <div className='box-auth'>
@@ -26,8 +25,8 @@ const UserInfo = () => {
                 setShowModal(!showModal);
               }}
             >
-              <Avatar round name={user.username} size='32' textSizeRatio={32 / 15} style={{ cursor: 'pointer' }} />
-              <span className='one-line-ellipsis'>{user.username}</span>
+              <Avatar round name={user.user_name} size='32' textSizeRatio={32 / 15} style={{ cursor: 'pointer' }} />
+              <span className='one-line-ellipsis'>{user.user_name}</span>
               <div className='icon-wrapper'>
                 <span className='fun-ic ic-more-horizontal'></span>
               </div>

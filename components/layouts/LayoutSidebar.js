@@ -1,19 +1,19 @@
 import React,{useState} from 'react'
-
+import { useSelector, useDispatch } from 'react-redux'
 import Head from 'next/head';
-import Link from 'components/LinkMaster';
-import Nav from 'components/navigations/Nav';
-import Sidebar from 'components/navigations/Sidebar';
-import { useRouter } from 'next/router';
+// import Link from 'components/LinkMaster';
+// import Nav from 'components/navigations/Nav';
+// import Sidebar from 'components/navigations/Sidebar';
+// import { useRouter } from 'next/router';
 import { Layout, Menu,Affix } from 'antd';
 import IntroGame from 'components/Intro'
 import {
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
+
   UserOutlined,
   VideoCameraOutlined,
   UploadOutlined,
 } from '@ant-design/icons';
+import UserInfo from './UserInfo'
 
 const { Header, Sider, Content } = Layout;
 
@@ -59,6 +59,9 @@ const LayoutSidebar = ({ children, title = 'Playfun - Bang hội', history })=> 
                     </Menu.Item>
                     <Menu.Item key="3" icon={<UploadOutlined />}>
                     nav 3
+                    </Menu.Item>
+                    <Menu.Item key="4" icon={<UploadOutlined />}>
+                      <UserInfo/>
                     </Menu.Item>
                 </Menu>
             </Sider>

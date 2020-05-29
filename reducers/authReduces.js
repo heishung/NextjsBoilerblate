@@ -22,29 +22,6 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case LOAD_USER_WITH_SSO:
-      return {
-        ...state,
-        token: action.token,
-        user: { ...action.user },
-        jwtToken: action.jwtToken,
-        isAuthenticated: true,
-        loading: false,
-      };
-    case LOAD_USER[REQUEST]:
-      return {
-        ...state,
-        token: action.token,
-        loading: true,
-      };
-    case LOAD_USER[SUCCESS]:
-      return {
-        ...state,
-        user: { ...action.user },
-        jwtToken: action.jwtToken,
-        isAuthenticated: true,
-        loading: false,
-      };
     case LOGIN[REQUEST]:
       return {
         ...state,
@@ -54,14 +31,29 @@ export default function (state = initialState, action) {
       return {
         ...state,
       };
-    case LOGIN[SUCCESS]:
-    case REGISTER[SUCCESS]:
+    case LOGIN[SUCCESS]:{
+      const {token} = action.data
+      console.log(action.data)
       return {
         ...state,
-        token: action.token,
+        user:action.data,
+        token: token,
         isAuthenticated: true,
         loading: false,
       };
+    }
+    case REGISTER[SUCCESS]:{
+      const {token} = action.data
+      return {
+        ...state,
+        user:action.data,
+        token: token,
+        isAuthenticated: true,
+        loading: false,
+      };
+    }
+      
+     
     case REGISTER[REQUEST]:
       return {
         ...state,

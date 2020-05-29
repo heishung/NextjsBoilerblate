@@ -2,15 +2,14 @@ import React from 'react'
 import { Breadcrumb } from 'antd';
 import ContentIntro from './ContentIntro'
 import styled from 'styled-components'
+import Link from 'components/LinkMaster';
 
-const ContainerIntro = styled.div`
-    
-`
+
 function index() {
     return (
         <div className="ContainerIntro">
              <Breadcrumb separator=">">
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
+                <Breadcrumb.Item><Link href='/'>Trang chủ</Link></Breadcrumb.Item>
                 <Breadcrumb.Item href="">Application Center</Breadcrumb.Item>
                 <Breadcrumb.Item href="">Application List</Breadcrumb.Item>
                 <Breadcrumb.Item>An Application</Breadcrumb.Item>

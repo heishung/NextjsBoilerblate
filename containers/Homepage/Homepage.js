@@ -5,14 +5,9 @@ import Link from 'components/LinkMaster';
 import { baseUrl } from 'configs/baseUrls';
 import CarouselHome from './Carousel'
 import styled from 'styled-components'
-// import 'styles/pages/homepage.scss';
+import 'styles/pages/homepage.scss';
 
-const CustomCarousel = styled.div`
-  display:grid;
-  grid-template-columns:600px auto;
-  grid-column-gap:20px;
-  
-`
+
 
 const Homepage = () => {
   const router = useRouter();
@@ -26,10 +21,10 @@ const Homepage = () => {
 
   return (
     <>
-      <CustomCarousel className='home-banner'>
+      <div className='home-banner'>
           <CarouselHome/>
-          <div>asdas</div>
-      </CustomCarousel>
+          <div><Link href='/login'><a title='Login'>Login</a></Link></div>
+      </div>
 
       <div className='article'>
         <h1>

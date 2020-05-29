@@ -7,8 +7,6 @@ import { compose } from 'recompose';
 import DefaulLayout from 'components/layouts/DefaultLayout';
 import LayoutSidebar from 'components/layouts/LayoutSidebar';
 import { loadUserWithSSO, logout } from 'actions/authActions';
-import authWithSSO, { setTokenToCookie, removeTokenFromCookie } from 'services/authWithSSO';
-import { redirectToHome } from 'services/redirectToHome';
 import { initGTM } from 'utils/analytics';
 // TODO: have better way to get token from cookie?
 import withAuthSync from 'hocs/withAuthSync';
@@ -21,44 +19,44 @@ import 'styles/pages/guild.scss';
 import 'styles/pages/auth.scss';
 import 'antd/dist/antd.css'
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {};
-    const { isServer, accessToken, authorizationCode, store } = ctx;
+  // static async getInitialProps({ Component, ctx }) {
+  //   let pageProps = {};
+  //   const { isServer, accessToken, authorizationCode, store } = ctx;
 
-    if (ctx.asPath == '/logout') {
-      await removeTokenFromCookie(ctx);
-      await store.dispatch(logout());
-      redirectToHome(ctx.res);
-    }
+  //   if (ctx.asPath == '/logout') {
+  //     await removeTokenFromCookie(ctx);
+  //     await store.dispatch(logout());
+  //     redirectToHome(ctx.res);
+  //   }
 
-    if (isServer && (accessToken || authorizationCode)) {
-      const { token, user, jwtToken, error } = await authWithSSO(authorizationCode, accessToken);
-      if (error) {
-        await removeTokenFromCookie(ctx);
-        await store.dispatch(logout());
-        redirectToHome(ctx.res);
-      } else {
-        if (!accessToken) {
-          await setTokenToCookie(ctx, token);
-        }
+  //   if (isServer && (accessToken || authorizationCode)) {
+  //     const { token, user, jwtToken, error } = await authWithSSO(authorizationCode, accessToken);
+  //     if (error) {
+  //       await removeTokenFromCookie(ctx);
+  //       await store.dispatch(logout());
+  //       redirectToHome(ctx.res);
+  //     } else {
+  //       if (!accessToken) {
+  //         await setTokenToCookie(ctx, token);
+  //       }
 
-        await store.dispatch(loadUserWithSSO(token, user, jwtToken));
-      }
-    }
+  //       await store.dispatch(loadUserWithSSO(token, user, jwtToken));
+  //     }
+  //   }
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps({ ctx });
-    }
+  //   if (Component.getInitialProps) {
+  //     pageProps = await Component.getInitialProps({ ctx });
+  //   }
 
-    return { pageProps };
-  }
+  //   return { pageProps };
+  // }
 
-  componentDidMount() {
-    if (!window.GTM_INITIALIZED) {
-      initGTM();
-      window.GTM_INITIALIZED = true;
-    }
-  }
+  // componentDidMount() {
+  //   if (!window.GTM_INITIALIZED) {
+  //     initGTM();
+  //     window.GTM_INITIALIZED = true;
+  //   }
+  // }
 
   render() {
     const { Component, pageProps, store } = this.props;

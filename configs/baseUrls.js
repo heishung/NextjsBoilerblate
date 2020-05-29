@@ -3,30 +3,30 @@ const env = ['local', 'development', 'staging', 'production'].indexOf(process.en
 
 const baseUrls = {
   local: 'localhost:3001',
-  development: 'dev-banghoi.playfun.vn',
-  staging: 'stg-banghoi.playfun.vn',
-  production: 'banghoi.playfun.vn',
+  development: 'https://dev-api.gamemate.fun',
+  staging: 'https://stg-api.gamemate.fun',
+  production: 'https://api.gamemate.fun',
 };
 
 const apiBaseUrls = {
-  local: 'http://localhost:5001',
-  development: 'https://dev-api.playfun.vn/guild',
-  staging: 'https://stg-api.playfun.vn/guild',
-  production: 'https://api.playfun.vn/guild',
+  local: 'https://dev-api.gamemate.fun',
+  development: 'https://dev-api.gamemate.fun',
+  staging: 'https://stg-api.gamemate.fun',
+  production: 'https://api.gamemate.fun',
 };
 
 const napBaseUrls = {
-  local: 'https://dev-nap.funtap.vn',
-  development: 'https://dev-nap.funtap.vn',
-  staging: 'https://stg-nap.funtap.vn',
-  production: 'https://nap.funtap.vn',
+  local: 'localhost:3001',
+  development: 'https://dev-api.gamemate.fun',
+  staging: 'https://stg-api.gamemate.fun',
+  production: 'https://api.gamemate.fun',
 };
 
 const playfunBaseUrls = {
   local: 'http://localhost:3000',
-  development: 'https://dev.playfun.vn',
-  staging: 'https://stg.playfun.vn',
-  production: 'https://playfun.vn',
+  development: 'https://dev-api.gamemate.fun',
+  staging: 'https://stg-api.gamemate.fun',
+  production: 'https://api.gamemate.fun',
 };
 
 const baseUrl = baseUrls[[env]];
