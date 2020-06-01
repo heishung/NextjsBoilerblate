@@ -16,7 +16,6 @@ import 'styles/styles.scss';
 import 'styles/nav.scss';
 // import 'styles/pages/homepage.scss';
 import 'styles/pages/guild.scss';
-import 'styles/pages/auth.scss';
 import 'antd/dist/antd.css'
 class MyApp extends App {
   // static async getInitialProps({ Component, ctx }) {

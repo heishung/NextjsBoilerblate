@@ -1,6 +1,5 @@
 import React from 'react'
 import { Carousel } from 'antd';
-import styled from 'styled-components'
 
 function CarouselHomePage() {
     return (

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import Link from 'components/LinkMaster';
 import { useDispatch, useSelector } from 'react-redux';
 import FacebookLogin from 'react-facebook-login';
 import { authSelector } from 'reducers/selectors';
@@ -50,12 +49,7 @@ const Login = () => {
         <title>Đăng nhập | Funtap Bang Hội</title>
       </Head>
       <div className='auth-form'>
-        <div className='form-title'>
-          <a className='active'>Đăng nhập</a>
-          <Link href='/register'>
-            <a role='presentation'>Tạo tài khoản</a>
-          </Link>
-        </div>
+   
         <form onSubmit={e => handleSubmit(e)} className='form' id='funtap-guild-login-form'>
           <div className='form-group'>
             <input

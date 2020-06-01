@@ -1,6 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Link from 'components/LinkMaster';
 import Head from 'next/head';
 import { Collapse } from 'react-collapse';
 import FacebookLogin from 'react-facebook-login';
@@ -167,14 +166,7 @@ const Register = () => {
         <title>Đăng ký | Funtap</title>
       </Head>
       <div className='auth-form'>
-        <div className='form-title'>
-          <Link href='/login'>
-            <a>Đăng nhập</a>
-          </Link>
-          <a className='active' role='presentation'>
-            Tạo tài khoản
-          </a>
-        </div>
+ 
         <form onSubmit={e => handleSubmit(e)} className='fun-form' id='funtap-guild-login-form'>
           <div className={`form-group ${formErrors.email ? 'has-error' : ''}`}>
             <input

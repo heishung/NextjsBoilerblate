@@ -5,23 +5,13 @@ import Head from 'next/head';
 // import Nav from 'components/navigations/Nav';
 // import Sidebar from 'components/navigations/Sidebar';
 // import { useRouter } from 'next/router';
-import { Layout, Menu,Affix } from 'antd';
-import IntroGame from 'components/Intro'
-import {
-
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
-} from '@ant-design/icons';
-import UserInfo from './UserInfo'
-
-const { Header, Sider, Content } = Layout;
+import { Layout } from 'antd';
+import IntroGame from 'components/Intro';
+import ModalGlobal from 'components/Modal';
+import SideBar from './sider'
+const { Content } = Layout;
 
 const LayoutSidebar = ({ children, title = 'Playfun - Bang hội', history })=> {
-    const [collapsed,setCollapsed] = useState(true)
-    const toggle = () => {
-        setCollapsed(!collapsed)
-    };
     return (
     < >
         <Head>
@@ -47,26 +37,8 @@ const LayoutSidebar = ({ children, title = 'Playfun - Bang hội', history })=> 
           <meta name='description' content='Tứ Hải Giai Huynh Đệ. Chơi Game là phải có Anh Em!' />
         </Head>
         <Layout id='app'>
-        <Affix>
-            <Sider style={{minHeight: '30vh'}} trigger={null} collapsible collapsed={collapsed}>
-                <div className="logo" />
-                <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-                    <Menu.Item key="1" icon={<UserOutlined />}>
-                    nav 1
-                    </Menu.Item>
-                    <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-                    nav 2
-                    </Menu.Item>
-                    <Menu.Item key="3" icon={<UploadOutlined />}>
-                    nav 3
-                    </Menu.Item>
-                    <Menu.Item key="4" icon={<UploadOutlined />}>
-                      <UserInfo/>
-                    </Menu.Item>
-                </Menu>
-            </Sider>
-        </Affix>
-        
+        <SideBar/>
+        <ModalGlobal/>
         <Layout className="site-layout">
             <IntroGame/>
           {/* <Header className="site-layout-background" style={{ padding: 0 }}>
