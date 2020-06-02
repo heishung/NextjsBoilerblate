@@ -1,6 +1,5 @@
 #container-intro{
     margin: 24px 16px;
-    padding: 0px 24px 0px 24px ;
     display: flex;
     flex-wrap:wrap;
     justify-content:space-between;
@@ -20,7 +19,6 @@
         flex-direction: column;
         .intro-content-right-name{
             line-height:24px;
-            margin-bottom: 5px;
         }
         .intro-content-right-btn-download{
             padding:5px 10px 5px 10px

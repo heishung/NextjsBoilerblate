@@ -1,6 +1,7 @@
 require('dotenv').config();
 const withPlugins = require('next-compose-plugins');
 const withSass = require('@zeit/next-sass');
+const withImages = require('next-images')
 const withCSS = require('@zeit/next-css')
 const path = require('path');
 // const basePath = process.env.ENV != 'local' ? '/bang-hoi' : '';
@@ -27,11 +28,10 @@ const nextConfig = {
 
     return config;
   },
-
   env: {
     // Reference a variable that was defined in the .env file and make it available at Build Time
     ENV: process.env.ENV,
   },
 };
 
-module.exports = withPlugins([withSass,withCSS, {}], nextConfig);
+module.exports = withPlugins([withSass,withCSS,withImages, {}], nextConfig);
