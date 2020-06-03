@@ -9,7 +9,12 @@ import { Layout } from 'antd';
 import IntroGame from 'components/Intro';
 import ModalGlobal from 'components/Modal';
 import SideBar from './sider'
+import styled from 'styled-components'
 const { Content } = Layout;
+const CustomContent = styled(Content)`
+  background-color:#E5E5E5!important;
+  padding:0px 24px 0px 24px;
+`
 
 const LayoutSidebar = ({ children, title = 'Playfun - Bang hội', history })=> {
     return (
@@ -37,27 +42,15 @@ const LayoutSidebar = ({ children, title = 'Playfun - Bang hội', history })=> 
           <meta name='description' content='Tứ Hải Giai Huynh Đệ. Chơi Game là phải có Anh Em!' />
         </Head>
         <Layout id='app'>
-        <SideBar/>
-        <ModalGlobal/>
-        <Layout className="site-layout">
-            <IntroGame/>
-          {/* <Header className="site-layout-background" style={{ padding: 0 }}>
-            {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-              className: 'trigger',
-              onClick: toggle,
-            })}
-          </Header> */}
-          <Content
-            className="site-layout-background"
-            style={{
-              margin: '24px 16px',
-              padding: 24,
-              minHeight: 280,
-            }}
-          >
-            {children}
-          </Content>
-        </Layout>
+            <SideBar/>
+            <ModalGlobal/>
+           
+            <CustomContent
+              className="site-layout-background"
+            >
+               <IntroGame/>
+              {children}
+            </CustomContent>
       </Layout>
     </>
      

@@ -7,8 +7,11 @@ import CarouselHome from './Carousel'
 import Charts from './charts'
 import TournamentList from './TournamentList'
 import 'styles/pages/homepage.scss';
+import styled from 'styled-components'
 
+const Container = styled.div`
 
+`
 
 const Homepage = () => {
   const router = useRouter();
@@ -22,10 +25,10 @@ const Homepage = () => {
 
   return (
     <React.Fragment>
-      <div className='home-banner'>
-          <CarouselHome/>
-          <Charts/>
-      </div>
+      <Container className='home-banner row'>
+          <CarouselHome className="col-md-8 " />
+          <Charts className="col-md-4 list-charts" />
+      </Container>
       <TournamentList/>
       <TournamentList/>
       <TournamentList/>
